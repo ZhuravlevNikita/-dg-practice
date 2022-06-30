@@ -1,1 +1,2 @@
-ruby hello.rb
+Use file
+$ ruby hello.rb
