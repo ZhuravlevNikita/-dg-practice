@@ -1,15 +1,17 @@
-def greeting(name, lastname, age)
+def greeting(firstname, lastname, age)
+  a = "Привет, #{firstname.capitalize} #{lastname.capitalize}. Тебе меньше 18 лет, но начать учиться программировать никогда не рано"
+  b = "Привет, #{firstname.capitalize} #{lastname.capitalize}. Самое время заняться делом!"
   if age < 18
-    puts "Привет, #{name.capitalize} #{lastname.capitalize}. Тебе меньше 18 лет, но начать учиться программировать никогда не рано"
+    puts a
   else 
-    puts "Привет, #{name.capitalize} #{lastname.capitalize}. Самое время заняться делом!"
+    puts b
   end
 end
 puts "Введите имя:"
-name = gets.chomp
+firstname = gets.chomp
 puts "Введите фамилию:"
 lastname = gets.chomp
 puts "Введите возраст, численно:"
 age = gets.chomp.to_i
 
-greeting(name, lastname, age)
+greeting(firstname, lastname, age)
